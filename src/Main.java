@@ -6,7 +6,7 @@ public class Main {
     public static void results(int a, int b, int c) {
         double resultSqrt,resultA,resultB;
         resultSqrt = ((b * b) - (4 * a * c));
-        Math.sqrt(resultSqrt);
+        resultSqrt =  Math.sqrt(resultSqrt);
 
         if (resultSqrt < 0) {
             System.out.println("Invaild solution.");
@@ -14,10 +14,10 @@ public class Main {
             resultA = ((-b) + (resultSqrt)) / (2 * a);
             resultB = ((-b) - (resultSqrt)) / (2 * a);
             if (resultA == resultB) {
-                System.out.println("The solution is" + resultA);
+                System.out.println("Only single solution: " + resultA);
             }
             else{
-                System.out.println("The solution of x1 is" + resultA + "and the solution of x2:" + resultB);
+                System.out.println("The solution of x1 is " + resultA + "and the solution of x2: " + resultB);
             }
         }}
 
